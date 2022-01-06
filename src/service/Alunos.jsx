@@ -1,6 +1,6 @@
 import axios from "axios"
 
-const url= "https://dashboard.heroku.com/apps/api-academia-alunos"
+const url= "https://api-academia-alunos.herokuapp.com/alunos"
 
 const Alunos= {
     async listAlunos() {
@@ -26,7 +26,7 @@ const Alunos= {
         const endpoin = `/${alunoEmail}`
         return axios({
           method: 'put',
-          url: 'https://dashboard.heroku.com/apps/api-academia-alunos'+ endpoin,
+          url: 'https://api-academia-alunos.herokuapp.com/alunos'+ endpoin,
           data: data
         })
       },
