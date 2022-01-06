@@ -10,18 +10,18 @@ import {Nav,
     NavBtn,
     NavBtnLink} from './NavbarElements';
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
     return (
         <>
         <Nav>
             <NavbarContainer>
                 <NavLogo to="/">GymTech</NavLogo>
-                <MobileIcon>
+                <MobileIcon onClick={toggle}>
                     <FaBars />    
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to="about">Sobre Nós</NavLinks>
+                        <NavLinks to='about'>Sobre Nós</NavLinks>
                     </NavItem>
 
                     <NavItem>
@@ -41,7 +41,7 @@ const Navbar = () => {
                     </NavItem>
                 </NavMenu>
                 <NavBtn>
-                    <NavBtnLink to="/login">Log In</NavBtnLink>
+                    <NavBtnLink to='/login'>Log In</NavBtnLink>
                 </NavBtn>
             </NavbarContainer>
         </Nav>
