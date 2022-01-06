@@ -1,4 +1,4 @@
 export function PegaLista() {
-    return fetch('https://pokeapi.co/api/v2/pokemon/ditto')
+    return fetch('https://api-academia-alunos.herokuapp.com/alunos')
       .then(data => data.json())
   }

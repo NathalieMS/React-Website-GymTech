@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-const LISTA_ALUNOS = 'https://pokeapi.co/api/v2/pokemon/ditto'
+const LISTA_ALUNOS = 'https://api-academia-alunos.herokuapp.com/alunos'
 
 
 export default function Alunos() {
@@ -42,7 +42,7 @@ export default function Alunos() {
 
 // import axios from "axios"
 
-// const url= "https://dashboard.heroku.com/apps/api-academia-alunos"
+// const url= "https://api-academia-alunos.herokuapp.com/alunos"
 
 // const Alunos= {
 //     async listAlunos() {
@@ -68,7 +68,7 @@ export default function Alunos() {
 //         const endpoint = `/${alunoEmail}`
 //         return axios({
 //           method: 'put',
-//           url: 'https://dashboard.heroku.com/apps/api-academia-alunos'+ endpoint,
+//           url: 'https://api-academia-alunos.herokuapp.com/alunos'+ endpoint,
 //           data: data
 //         })
 //       },
