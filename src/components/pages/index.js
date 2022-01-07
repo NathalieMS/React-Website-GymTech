@@ -15,6 +15,7 @@ const toggle = () =>{
                 <Sidebar isOpen={isOpen} toggle={toggle} />
                 <Navbar toggle={toggle} />
                 <HeroSection />
+                <InfoSection />
         </>
     );
 };
