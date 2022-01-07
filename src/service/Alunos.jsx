@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 
-const LISTA_ALUNOS = 'https://api-academia-alunos.herokuapp.com/alunos'
+const LISTA_ALUNOS = 'https://api-academia-alunos.herokuapp.com'
 
 
 export default function Alunos() {
