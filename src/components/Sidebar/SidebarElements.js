@@ -37,7 +37,7 @@ color: #fff;
 `
 export const SidebarMenu = styled.ul`
 display: grid;
-grid-template-colums: 1fr;
+grid-template-columns: 1fr;
 grid-template-rows: repeat(6, 80px);
 text-align: center;
 
@@ -51,7 +51,7 @@ grid-template-rows: repeat(6, 60px);
 export const SidebarLink = styled(LinkS)`
 display: flex;
 align-items: center;
-justifify-content: center;
+justify-content: center;
 font-size: 1.5rem;
 text-decoration: none;
 list-style: none;
@@ -63,6 +63,7 @@ text-decoration: none;
 &:hover{
     color: #01bf71;
     transition: 0.2s esase-in-out;
+
 }
 `
 
@@ -83,6 +84,7 @@ outline: none;
 border: none;
 cursor: pointer;
 transition: all 0.2s ease-in-out;
+text-decoration: none;
 
 &:hover{
     transition: all 0.2s ease-in-out; 
