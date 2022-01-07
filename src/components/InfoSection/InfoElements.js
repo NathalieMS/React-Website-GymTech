@@ -29,5 +29,7 @@ export const InfoRow = styled.div`
     
     @media screen and (max-width: 768px) {
         grid-template-areas: ${({imgStart}) => (imgStart ? `'col1'`)};
+//@Lari
+
     }
 `    
