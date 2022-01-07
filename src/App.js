@@ -1,28 +1,63 @@
 import React from 'react';
-import './App.css';
-import Alunos from "./service/Alunos"
-import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Axios from 'axios';
+import "./App.css";
 
-
-function App (){
-   return (
-      <div className="App">
-        <Router>
-        
-          <Routes>
-          
-            <Route path="/" element={<h1>TESTE</h1>} />
-            <Route path="/buscaraluno" element={<Alunos/>} />
-            
-          </Routes>
-          
-        </Router>
-      </div>
+function App() {
+  const ListaDeAlunos = () => {
+    Axios.get("https://api-academia-alunos.herokuapp.com/alunos").then((response) => {
+      console.log(response);
+    }
     )
   }
-
+  return( <div>Deu certo! <button onClick={ListaDeAlunos}>Buscar</button>
+  </div>);
+}
 
 export default App;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react';
+// import './App.css';
+// import Alunos from "./service/Alunos"
+// import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+
+
+// function App (){
+//    return (
+//       <div className="App">
+//         <Router>
+        
+//           <Routes>
+          
+//             <Route path="/" element={<h1>TESTE DE API</h1>} />
+//             <Route path="/buscaraluno" element={<Alunos/>} />
+            
+//           </Routes>
+          
+//         </Router>
+//       </div>
+//     )
+//   }
+
+
+// export default App;
 
 
 
