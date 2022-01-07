@@ -29,7 +29,10 @@ const HeroSection = () => {
                     Conectando seu corpo com a tecnologia e ciência para resultados em tempo recorde.
                     </HeroP>
                     <HeroBtnWrapper>
-                        <Button to='/contato' onMouseEnter={onHover} onMouseLeave={onHover}>
+                        <Button to='/contato' onMouseEnter={onHover} onMouseLeave={onHover}
+                        primary='true'
+                        dark='true'
+                        >
                             Eu quero {hover ? <ArrowForward /> : <ArrowRight />}
                         </Button>
                     </HeroBtnWrapper>
