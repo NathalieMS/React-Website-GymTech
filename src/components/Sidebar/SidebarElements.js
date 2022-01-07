@@ -63,6 +63,7 @@ text-decoration: none;
 &:hover{
     color: #01bf71;
     transition: 0.2s esase-in-out;
+
 }
 `
 
