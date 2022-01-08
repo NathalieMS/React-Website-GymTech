@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ServicesContainer = styled.div`  
     height: 800px;
@@ -48,7 +48,7 @@ export const ServicesCard = styled.div`
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
 
-    &:hover{
+    &:hover {
         transform: scale(1.02);
         transition: all 0.2s ease-in-out;
         cursor: pointer;        
@@ -59,7 +59,7 @@ export const ServicesIcon = styled.img`
     height: 160px;
     width: 160px;
     margin-bottom: 10px;
-`
+`;
 
 export const ServicesH1 = styled.h1` 
     font-size: 2.5rem;
@@ -79,4 +79,4 @@ export const ServicesH2 = styled.h2`
 export const ServicesP = styled.p` 
     font-size: 1rem;
     text-align: center;
-`
+`;
