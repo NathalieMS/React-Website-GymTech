@@ -5,6 +5,7 @@ import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour} from '../InfoSection
 import Navbar from '../Navbar'; 
 import Services from '../Services';
 import Sidebar from '../Sidebar';
+import Footer from '../Footer';
 
 const Home = () => {
 const[isOpen, setIsOpen] = useState(false);
@@ -23,6 +24,7 @@ const toggle = () =>{
                 <Services />
                 <InfoSection {...homeObjThree}/>
                 <InfoSection {...homeObjFour}/>
+                <Footer />
         </>
     );
 };
