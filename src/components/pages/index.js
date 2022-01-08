@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import HeroSection from '../HeroSection';
+import InfoSection from '../InfoSection';
 import Navbar from '../Navbar';
 import Sidebar from '../Sidebar';
 
