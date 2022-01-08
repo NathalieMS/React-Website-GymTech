@@ -20,9 +20,9 @@ const Services = () => {
             <ServicesWrapper>
 
                 <ServicesCard>
-                    <ServicesIcon src={Icon1}/>
-                    <ServicesH2>Virtual Offices</ServicesH2>
-                    <ServicesP>You can access our platform online anywhere in the world</ServicesP>
+                    <ServicesIcon src={Icon1} />
+                    <ServicesH2>Reduce expenses</ServicesH2>
+                    <ServicesP>We help reduce your fees and increase your overall revenue</ServicesP>
                 </ServicesCard>
 
                 <ServicesCard>
