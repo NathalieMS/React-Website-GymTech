@@ -21,19 +21,19 @@ const Navbar = ({ toggle }) => {
                 </MobileIcon>
                 <NavMenu>
                     <NavItem>
-                        <NavLinks to='about'>Sobre Nós</NavLinks>
+                        <NavLinks to='about'>About</NavLinks>
                     </NavItem>
 
                     <NavItem>
-                        <NavLinks to='unidades'>Unidades</NavLinks>
+                        <NavLinks to='locations'>Locations</NavLinks>
                     </NavItem>
 
                     <NavItem>
-                        <NavLinks to='planos'>Planos</NavLinks>
+                        <NavLinks to='memberships'>Memberships</NavLinks>
                     </NavItem>
 
                     <NavItem>
-                        <NavLinks to='atividades'>Atividades</NavLinks>
+                        <NavLinks to='howitworks'>How it Works</NavLinks>
                     </NavItem>
 
                     <NavItem>

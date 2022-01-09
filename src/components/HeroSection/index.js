@@ -24,16 +24,16 @@ const HeroSection = () => {
                 <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
             </HeroBg>
             <HeroContent>
-                <HeroH1>O futuro para construir sua melhor versão</HeroH1>
+                <HeroH1>The future to build your best version</HeroH1>
                 <HeroP>
-                    Conectando seu corpo com a tecnologia e ciência para resultados em tempo recorde.
+                    Connecting your body with technology and science for results in record time
                     </HeroP>
                     <HeroBtnWrapper>
                         <Button to='/contato' onMouseEnter={onHover} onMouseLeave={onHover}
                         primary='true'
                         dark='true'
                         >
-                            Eu quero {hover ? <ArrowForward /> : <ArrowRight />}
+                            Join Now {hover ? <ArrowForward /> : <ArrowRight />}
                         </Button>
                     </HeroBtnWrapper>
             </HeroContent>

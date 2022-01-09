@@ -15,26 +15,32 @@ import {
 
 const Services = () => {
     return (
-        <ServicesContainer id='services'>
-            <ServicesH1>Nossos Planos</ServicesH1>
+        <ServicesContainer id='memberships'>
+            <ServicesH1>Flexible plans to fit your lifestyle</ServicesH1>
             <ServicesWrapper>
 
                 <ServicesCard>
                     <ServicesIcon src={Icon1} />
-                    <ServicesH2>Reduce expenses</ServicesH2>
+                    <ServicesH2>Gold</ServicesH2>
                     <ServicesP>We help reduce your fees and increase your overall revenue</ServicesP>
+                    <br />
+                    <ServicesH2>$79.99</ServicesH2>
                 </ServicesCard>
 
                 <ServicesCard>
                     <ServicesIcon src={Icon2} />
-                    <ServicesH2>Virtual Offices</ServicesH2>
+                    <ServicesH2>Platinum</ServicesH2>
                     <ServicesP>You can access our platform online anywhere in the world</ServicesP>
+                    <br />
+                    <ServicesH2>$119.99</ServicesH2>
                 </ServicesCard>
 
                 <ServicesCard>
                     <ServicesIcon src={Icon3} />
-                    <ServicesH2>Premium Benefits</ServicesH2>
+                    <ServicesH2>Diamond</ServicesH2>
                     <ServicesP>Unlock our special embership card that returns 5% cash back.</ServicesP>
+                    <br />
+                    <ServicesH2>$199.99</ServicesH2>
                 </ServicesCard>
 
             </ServicesWrapper>

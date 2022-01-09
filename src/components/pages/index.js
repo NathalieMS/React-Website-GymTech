@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import HeroSection from '../HeroSection';
 import InfoSection from '../InfoSection';
-import { homeObjOne, homeObjTwo, homeObjThree, homeObjFour} from '../InfoSection/Data';
+import { homeObjOne, homeObjTwo, homeObjFour} from '../InfoSection/Data';
 import Navbar from '../Navbar'; 
 import Services from '../Services';
 import Sidebar from '../Sidebar';
@@ -22,7 +22,7 @@ const toggle = () =>{
                 <InfoSection {...homeObjOne}/>
                 <InfoSection {...homeObjTwo}/>
                 <Services />
-                <InfoSection {...homeObjThree}/>
+
                 <InfoSection {...homeObjFour}/>
                 <Footer />
         </>
