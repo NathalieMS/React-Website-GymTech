@@ -1,55 +1,49 @@
 import React from 'react'
-import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
-import { FooterContainer, 
-    FooterWrap, 
-    FooterLinksContainer, 
-    FooterLinksWrapper, 
-    FooterLinksItems, 
-    FooterLinkTitle,
-FooterLink } from './FooterElements'
+import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FooterContainer, FooterWrap, FooterLinksContainer, FooterLinksWrapper, FooterLinkItems, FooterLinkTitle, FooterLink, SocialMedia, SocialMediaWrap, SocialLogo, WebsiteRights, SocialIcons, SocialIconLink} from './FooterElements';
 const Footer = () => {
     return (
         <FooterContainer>
             <FooterWrap>
                 <FooterLinksContainer>
                    <FooterLinksWrapper>
-                       <FooterLinksItems>
+                       <FooterLinkItems>
                            <FooterLinkTitle>About Us</FooterLinkTitle>
                                <FooterLink to='/'>How it works</FooterLink>
                                <FooterLink to='/'>Testmonials</FooterLink>
                                <FooterLink to='/'>Carrers</FooterLink>
                                <FooterLink to='/'>Investors</FooterLink>
                                <FooterLink to='/'>Terms of Service</FooterLink>                           
-                       </FooterLinksItems>
+                       </FooterLinkItems>
 
-                       <FooterLinksItems>
+                       <FooterLinkItems>
                            <FooterLinkTitle>About Us</FooterLinkTitle>
                                <FooterLink to='/'>How it works</FooterLink>
                                <FooterLink to='/'>Testmonials</FooterLink>
                                <FooterLink to='/'>Carrers</FooterLink>
                                <FooterLink to='/'>Investors</FooterLink>
                                <FooterLink to='/'>Terms of Service</FooterLink>                           
-                       </FooterLinksItems>
+                       </FooterLinkItems>
                     </FooterLinksWrapper>  
 
                     <FooterLinksWrapper>
-                       <FooterLinksItems>
+                       <FooterLinkItems>
                            <FooterLinkTitle>About Us</FooterLinkTitle>
                                <FooterLink to='/'>How it works</FooterLink>
                                <FooterLink to='/'>Testmonials</FooterLink>
                                <FooterLink to='/'>Carrers</FooterLink>
                                <FooterLink to='/'>Investors</FooterLink>
                                <FooterLink to='/'>Terms of Service</FooterLink>                           
-                       </FooterLinksItems>
+                       </FooterLinkItems>
 
-                       <FooterLinksItems>
+                       <FooterLinkItems>
                            <FooterLinkTitle>About Us</FooterLinkTitle>
                                <FooterLink to='/'>How it works</FooterLink>
                                <FooterLink to='/'>Testmonials</FooterLink>
                                <FooterLink to='/'>Carrers</FooterLink>
                                <FooterLink to='/'>Investors</FooterLink>
                                <FooterLink to='/'>Terms of Service</FooterLink>                           
-                       </FooterLinksItems>
+                       </FooterLinkItems>
 
                     </FooterLinksWrapper>                     
                 </FooterLinksContainer>
@@ -57,10 +51,10 @@ const Footer = () => {
                 <SocialMedia>
                     <SocialMediaWrap>
                     <SocialLogo to='/'>
-                    dolla
+                    GymTech
                     </SocialLogo>
-                    <WebsiteRights> GymTech  © {new Date().getFullYear()} 
-                    All rigths reserved</WebsiteRights>
+                    <WebsiteRights> GymTech  ©  {new Date().getFullYear() } 
+                     All rigths reserved</WebsiteRights>
 
                     <SocialIcons>
                         <SocialIconLink href="//www.facebook.com/resilia.br/" target="_blank"
