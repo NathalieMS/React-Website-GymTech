@@ -22,7 +22,7 @@ const toggle = () =>{
                 <InfoSection {...homeObjOne}/>
                 <InfoSection {...homeObjTwo}/>
                 <Services />
-
+  
                 <InfoSection {...homeObjFour}/>
                 <Footer />
         </>

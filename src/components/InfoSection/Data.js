@@ -4,7 +4,7 @@ export const homeObjOne = {
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'About us',
+    topLine: 'Smart fitness technology',
     headline: 'We are the future of fitness',
     description: "Our studios have cutting-edge equipment, so you maximise every single workout. You are free to focus on the activity and to be better, we do everything else for you. Achieve your performance goals and track progress in real-time.",
     buttonLabel: 'Join Now',
