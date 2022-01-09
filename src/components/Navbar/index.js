@@ -44,23 +44,51 @@ const Navbar = ({ toggle }) => {
                         </MobileIcon>
                         <NavMenu>
                             <NavItem>
-                                <NavLinks to='about'>About</NavLinks>
+                                <NavLinks
+                                    to='about'
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact='true'
+                                    offset={-80}
+                                >
+                                    About</NavLinks>
                             </NavItem>
 
                             <NavItem>
-                                <NavLinks to='locations'>Locations</NavLinks>
+                                <NavLinks to='locations'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}>Locations</NavLinks>
                             </NavItem>
 
                             <NavItem>
-                                <NavLinks to='memberships'>Memberships</NavLinks>
+                                <NavLinks to='memberships'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}>Memberships</NavLinks>
                             </NavItem>
 
                             <NavItem>
-                                <NavLinks to='howitworks'>How it Works</NavLinks>
+                                <NavLinks to='howitworks'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}>How it Works</NavLinks>
                             </NavItem>
 
                             <NavItem>
-                                <NavLinks to='/contact'>Contact</NavLinks>
+                                <NavLinks to='/contact'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}>Contact</NavLinks>
                             </NavItem>
                         </NavMenu>
                         <NavBtn>
