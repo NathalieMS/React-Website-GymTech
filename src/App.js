@@ -11,10 +11,10 @@ function App() {
     }
     )
   }
+
   if (alunos){
       console.log(alunos)
   }
-
   return( <div>
     Deu certo! <button onClick={Alunos}>Buscar</button>
     <div>
