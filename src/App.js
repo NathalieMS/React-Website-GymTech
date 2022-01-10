@@ -1,11 +1,16 @@
 import React from 'react';
 import "./App.css";
-import ReqApi from './components/Login/SignIn/ReqApi'
+import ReqApi from './components/Login/APi/ReqApi'
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 
 function App() {
     return(
-      <ReqApi />
+      <Router>
+        <Routes>
+          <Route path='/register' element={<ReqApi />}/>
+        </Routes>
+      </Router>
     )
 }
 
