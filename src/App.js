@@ -1,26 +1,12 @@
-import React, {useState} from 'react';
-import Axios from 'axios';
+import React from 'react';
 import "./App.css";
+import ReqApi from './components/Login/SignIn/ReqApi'
 
 
 function App() {
-  const [alunos, setAlunos] = useState([])
-  const Alunos = () => {
-    Axios.get("https://api-academia-alunos.herokuapp.com/alunos").then((response) => {
-      setAlunos(response.data.alunos);
-    }
+    return(
+      <ReqApi />
     )
-  }
-
-  if (alunos){
-      console.log(alunos)
-  }
-  return( <div>
-    Deu certo! <button onClick={Alunos}>Buscar</button>
-    <div>
-      {alunos.map((aluno)=> {return<p>{aluno.nome}</p>})}
-    </div>
-    </div>);
 }
 
 export default App;

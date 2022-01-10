@@ -2,7 +2,7 @@ import React from 'react'
 
 function DashAluno() {
     return (
-       <h1>Login</h1>
+       <h1>Olá, aluno</h1>
     )
 }
 
