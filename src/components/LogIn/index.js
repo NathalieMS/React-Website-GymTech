@@ -19,14 +19,14 @@ const LogIn = () => {
                 <FormWrap>
                     <Icon to='/'>GymTech</Icon>
                     <FormContent>
-                        <Form action='0'>
+                        <Form action='register'>
                             <FormH1>Log In to your account</FormH1>
                             <FormLabel htmlFor='for'>E-mail</FormLabel>
                             <FormInput type='email' required />
                             <FormLabel htmlFor='for'>Password</FormLabel>
                             <FormInput type='password' required />
                             <FormButton type='submit'>Continue</FormButton>
-                            <Text>Forgout password</Text>
+                            <Text>Forgot password?</Text>
                         </Form>
                     </FormContent>
                 </FormWrap>
