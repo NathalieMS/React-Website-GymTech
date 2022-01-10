@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from 'react';
 import './App.css';
 import {pegaLista} from "./service/lista"
 
@@ -33,6 +32,9 @@ function App() {
        <button type="submit">Submit</button>
      </form>
     </div>
-  )
+  );
 }
+
+//comentario da API teste
+
 export default App;
