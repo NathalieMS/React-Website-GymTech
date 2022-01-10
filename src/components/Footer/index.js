@@ -79,8 +79,8 @@ const Footer = () => {
                         <SocialLogo to='/' onClick={toggleHome}>
                             GymTech
                         </SocialLogo>
-                        <WebsiteRights> GymTech  ©  {new Date().getFullYear()}
-                            All rigths reserved</WebsiteRights>
+                        <WebsiteRights> GymTech © {new Date().getFullYear()}
+                             | All rigths reserved</WebsiteRights>
 
                         <SocialIcons>
                             <SocialIconLink href="//www.facebook.com/resilia.br/" target="_blank"
