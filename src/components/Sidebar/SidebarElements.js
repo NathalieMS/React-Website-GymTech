@@ -61,7 +61,7 @@ cursor: pointer;
 text-decoration: none;
 
 &:hover{
-    color: #01bf71;
+    color: #ff7900;
     transition: 0.2s esase-in-out;
 
 }
@@ -75,7 +75,7 @@ text-decoration: none;
 
 export const SidebarRoute = styled(LinkR)`
 border-radius: 50px;
-background: #01bf71;
+background: #ff7900;
 white-space: nowrap;
 padding: 16px 64px;
 color: #010606;

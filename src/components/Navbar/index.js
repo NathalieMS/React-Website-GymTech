@@ -1,52 +1,104 @@
-import React from 'react';
-import {FaBars} from 'react-icons/fa'
-import {Nav, 
-    NavbarContainer, 
-    NavLogo, 
-    MobileIcon, 
-    NavMenu, 
-    NavItem, 
+import React, { useState, useEffect } from 'react';
+import { FaBars } from 'react-icons/fa';
+import { IconContext } from 'react-icons/lib';
+import { animateScroll as scroll } from 'react-scroll';
+import {
+    Nav,
+    NavbarContainer,
+    NavLogo,
+    MobileIcon,
+    NavMenu,
+    NavItem,
     NavLinks,
     NavBtn,
-    NavBtnLink} from './NavbarElements';
+    NavBtnLink,
+} from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
+    const [scrollNav, setScrollNav] = useState(false);
+
+    const changeNav = () => {
+        if (window.scrollY >= 80) {
+            setScrollNav(true);
+        } else {
+            setScrollNav(false);
+        }
+    };
+
+    useEffect(() => {
+        window.addEventListener('scroll', changeNav);
+    }, []);
+
+    const toggleHome = () => {
+        scroll.scrollToTop();
+    };
+
     return (
         <>
-        <Nav>
-            <NavbarContainer>
-                <NavLogo to="/">GymTech</NavLogo>
-                <MobileIcon onClick={toggle}>
-                    <FaBars />    
-                </MobileIcon>
-                <NavMenu>
-                    <NavItem>
-                        <NavLinks to='about'>Sobre Nós</NavLinks>
-                    </NavItem>
+            <IconContext.Provider value={{ color: '#fff' }}>
+                <Nav scrollNav={scrollNav}>
+                    <NavbarContainer>
+                        <NavLogo to='/' onClick={toggleHome}>GymTech</NavLogo>
+                        <MobileIcon onClick={toggle}>
+                            <FaBars />
+                        </MobileIcon>
+                        <NavMenu>
+                            <NavItem>
+                                <NavLinks
+                                    to='about'
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact='true'
+                                    offset={-80}
+                                >
+                                    About</NavLinks>
+                            </NavItem>
 
-                    <NavItem>
-                        <NavLinks to='unidades'>Unidades</NavLinks>
-                    </NavItem>
+                            <NavItem>
+                                <NavLinks to='locations'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}>Locations</NavLinks>
+                            </NavItem>
 
-                    <NavItem>
-                        <NavLinks to='planos'>Planos</NavLinks>
-                    </NavItem>
+                            <NavItem>
+                                <NavLinks to='memberships'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}>Memberships</NavLinks>
+                            </NavItem>
 
-                    <NavItem>
-                        <NavLinks to='atividades'>Atividades</NavLinks>
-                    </NavItem>
+                            <NavItem>
+                                <NavLinks to='howitworks'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}>How it Works</NavLinks>
+                            </NavItem>
 
-                    <NavItem>
-                        <NavLinks to='contato'>Contato</NavLinks>
-                    </NavItem>
-                </NavMenu>
-                <NavBtn>
-                    <NavBtnLink to='/login'>Log In</NavBtnLink>
-                </NavBtn>
-            </NavbarContainer>
-        </Nav>
+                            <NavItem>
+                                <NavLinks to='/contact'
+                                smooth={true}
+                                duration={500}
+                                spy={true}
+                                exact='true'
+                                offset={-80}>Contact</NavLinks>
+                            </NavItem>
+                        </NavMenu>
+                        <NavBtn>
+                            <NavBtnLink to='/login'>Log In</NavBtnLink>
+                        </NavBtn>
+                    </NavbarContainer>
+                </Nav>
+            </IconContext.Provider>
         </>
-    )
-}
+    );
+};
 
 export default Navbar;
