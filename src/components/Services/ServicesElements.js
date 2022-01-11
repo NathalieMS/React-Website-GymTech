@@ -57,7 +57,7 @@ export const ServicesCard = styled.div`
     }
 `;
 export const ServicesChecks = styled.div` 
-    min-height: 200px;
+    min-height: 240px;
     padding: 10px 0;
 `;
 
