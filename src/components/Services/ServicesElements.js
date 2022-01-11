@@ -86,6 +86,7 @@ export const ServicesH1 = styled.h1`
 
 export const ServicesH2 = styled.h2` 
     font-size: 1.2rem;
+    margin-top: 18px;
     margin-bottom: 10px;
 `;
 

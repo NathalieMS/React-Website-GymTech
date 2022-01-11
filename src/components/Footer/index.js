@@ -42,36 +42,10 @@ const Footer = () => {
                             <FooterLink to='/'>Terms of Service</FooterLink>
                         </FooterLinkItems>
 
-                        <FooterLinkItems>
-                            <FooterLinkTitle>About Us</FooterLinkTitle>
-                            <FooterLink to='/'>How it works</FooterLink>
-                            <FooterLink to='/'>Testmonials</FooterLink>
-                            <FooterLink to='/'>Carrers</FooterLink>
-                            <FooterLink to='/'>Investors</FooterLink>
-                            <FooterLink to='/'>Terms of Service</FooterLink>
-                        </FooterLinkItems>
-                    </FooterLinksWrapper>
-
-                    <FooterLinksWrapper>
-                        <FooterLinkItems>
-                            <FooterLinkTitle>About Us</FooterLinkTitle>
-                            <FooterLink to='/'>How it works</FooterLink>
-                            <FooterLink to='/'>Testmonials</FooterLink>
-                            <FooterLink to='/'>Carrers</FooterLink>
-                            <FooterLink to='/'>Investors</FooterLink>
-                            <FooterLink to='/'>Terms of Service</FooterLink>
-                        </FooterLinkItems>
-
-                        <FooterLinkItems>
-                            <FooterLinkTitle>About Us</FooterLinkTitle>
-                            <FooterLink to='/'>How it works</FooterLink>
-                            <FooterLink to='/'>Testmonials</FooterLink>
-                            <FooterLink to='/'>Carrers</FooterLink>
-                            <FooterLink to='/'>Investors</FooterLink>
-                            <FooterLink to='/'>Terms of Service</FooterLink>
-                        </FooterLinkItems>
 
                     </FooterLinksWrapper>
+
+
                 </FooterLinksContainer>
 
                 <SocialMedia>
