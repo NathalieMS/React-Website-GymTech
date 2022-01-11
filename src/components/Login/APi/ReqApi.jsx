@@ -10,6 +10,18 @@ function ReqApi() {
     )
   }
 
+  const DelApi = (id) =>{
+    Axios.delete(`https://api-academia-alunos.herokuapp.com/alunos/${id}`).then (() =>{
+      Alunos ()
+    })
+  }
+
+  const PutApi = (id) =>{
+    Axios.delete(`https://api-academia-alunos.herokuapp.com/alunos/${id}`).then (() =>{
+      Alunos ()
+    })
+  }
+
   if (alunos) {
     console.log(alunos)
   }
@@ -27,6 +39,9 @@ function ReqApi() {
           <p>Telephone: {aluno.telefone}</p>
           <p>E-mail: {aluno.email}</p>
           <p>Plan: {aluno.plano}</p>
+
+          This is a<button onClick={()=>DelApi(aluno.id)}>Delete</button> 
+          This is a<button onClick={()=>PutApi(aluno.id)}>Edit</button> 
         </ul>
       })}
     </div>

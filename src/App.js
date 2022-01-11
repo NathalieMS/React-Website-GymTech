@@ -2,7 +2,6 @@ import React from 'react';
 import "./App.css";
 import ReqApi from './components/Login/APi/ReqApi'
 import PostApi from './components/Login/APi/PostApi'
-import DelApi from './components/Login/APi/DelApi'
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
 
 
@@ -12,7 +11,6 @@ function App() {
         <Routes>
           <Route path='/register' element={<ReqApi />}/>
           <Route path= '/post'  element={<PostApi />}/>
-          <Route path= '/delete' element={<DelApi/>}/>
         </Routes>
       </Router>
     )
