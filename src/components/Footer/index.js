@@ -35,11 +35,10 @@ const Footer = () => {
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>About Us</FooterLinkTitle>
-                            <FooterLink to='/'>Franchises</FooterLink>
-                            <FooterLink to='/'>Testmonials</FooterLink>
                             <FooterLink to='/'>Carrers</FooterLink>
+                            <FooterLink to='/'>Franchises</FooterLink>
                             <FooterLink to='/'>Investors</FooterLink>
-                            <FooterLink to='/'>Privacy policy</FooterLink>
+                            <FooterLink to='/'>Privacy Policy</FooterLink>
                             <FooterLink to='/'>Terms of Service</FooterLink>
                         </FooterLinkItems>
 

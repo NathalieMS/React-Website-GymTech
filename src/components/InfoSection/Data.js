@@ -1,5 +1,4 @@
 
-
 //section one
 export const homeObjOne = {
     id: 'about',
@@ -8,7 +7,7 @@ export const homeObjOne = {
     lightTextDesc: true,
     topLine: 'Smart fitness technology',
     headline: 'We are the future of fitness',
-    description: "Our studios have cutting-edge equipment, so you maximise every single workout. You are free to focus on the activity and to be better, we do everything else for you. Achieve your performance goals and track progress in real-time.",
+    description: `Our studios have cutting-edge equipment, so you maximise every single workout. You are free to focus on the activity and to be better, we do everything else for you. \nAchieve your performance goals and track progress in real-time.`,
     buttonLabel: 'Join Now',
     imgStart: false,
     img: require('../../images/fitness_5.png'),
@@ -45,7 +44,7 @@ export const homeObjFour = {
     lightTextDesc: false,
     topLine: 'Pioneering Software',
     headline: "Push performance to new heights",
-    description: "All machines have the latest generation of the Microsoft Azure Kinect 3.0 3D camera! The data collecting devices monitors your metabolism, diagnose carbohydrate and fat tolerance. You receive a personalized diet and nutrition based on your genetic. ",
+    description: "All machines have the latest generation of the Microsoft Azure Kinect 3.0 3D camera! \nThe data collecting devices monitors your metabolism, diagnose carbohydrate and fat tolerance. You receive a personalized diet and nutrition based on your genetic. ",
     buttonLabel: 'Join Now',
     imgStart: false,
     img: require('../../images/fitness_4.png'),

@@ -29,7 +29,7 @@ const Services = () => {
                     <ServicesP>< CheckMark/>22 pre-built workouts</ServicesP>
                     <ServicesP>< CheckMark/>24/7 Gym access</ServicesP>
                     <ServicesP>< CheckMark/>Access to 4 classes / week</ServicesP>
-                    <ServicesP>< CheckMark/>Limited access</ServicesP>
+                    <ServicesP>< CheckMark/>Choose 2 studios</ServicesP>
                     </ServicesChecks>
                     <ServicesH2><DollarSign />79.99</ServicesH2>
                 </ServicesCard>
@@ -41,7 +41,7 @@ const Services = () => {
                     <ServicesP>< CheckMark/>30 pre-built workouts</ServicesP>
                     <ServicesP>< CheckMark/>24/7 Gym access</ServicesP>
                     <ServicesP>< CheckMark/>Unlimited access to classes</ServicesP>
-                    <ServicesP>< CheckMark/>Limited access to all of our studios</ServicesP>
+                    <ServicesP>< CheckMark/>Unlimited access to all of our studios</ServicesP>
                     </ServicesChecks>
                     <ServicesH2><DollarSign />119.99</ServicesH2>
                 </ServicesCard>
@@ -55,6 +55,8 @@ const Services = () => {
                     <ServicesP>< CheckMark/>Unlimited access to classes</ServicesP>
                     <ServicesP>< CheckMark/>Unlimited access to all of our studios</ServicesP>
                     <ServicesP>< CheckMark/>Monthly meal plan designed by our scientists</ServicesP>
+                    <ServicesP>< CheckMark/>1 Personal training session / Week</ServicesP>
+
                     </ServicesChecks>
                     <ServicesH2><DollarSign />199.99</ServicesH2>
                 </ServicesCard>
