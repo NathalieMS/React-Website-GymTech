@@ -20,7 +20,7 @@ const LogIn = () => {
                     <Icon to='/'>GymTech</Icon>
                     <FormContent>
                         <Form action='register'>
-                            <FormH1>Log In to your account</FormH1>
+                            <FormH1>Restricted Area</FormH1>
                             <FormLabel htmlFor='for'>E-mail</FormLabel>
                             <FormInput type='email' required />
                             <FormLabel htmlFor='for'>Password</FormLabel>

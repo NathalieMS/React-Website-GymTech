@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { BsCheckLg, BsCurrencyDollar } from 'react-icons/bs';
 
 export const ServicesContainer = styled.div`  
     height: 800px;
@@ -8,12 +9,12 @@ export const ServicesContainer = styled.div`
     align-items: center;
     background: #010606;
 
-    @media screen and (max-width: 768px) {
-        height: 1100px;
+    @media screen and (max-width: 1000px) {
+        height: 1800px;
     }
 
     @media screen and (max-width: 480px) {
-        height: 1300px;
+        height: 1800px;
     }
 `;
 
@@ -41,10 +42,10 @@ export const ServicesCard = styled.div`
     background: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     border-radius: 10px;
-    max-height: 340px;
+    height: 500px;
     padding: 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.2);
     transition: all 0.2s ease-in-out;
@@ -54,6 +55,10 @@ export const ServicesCard = styled.div`
         transition: all 0.2s ease-in-out;
         cursor: pointer;        
     }
+`;
+export const ServicesChecks = styled.div` 
+    min-height: 200px;
+    padding: 10px 0;
 `;
 
 export const ServicesIcon = styled.img` 
@@ -67,17 +72,37 @@ export const ServicesH1 = styled.h1`
     color: #fff;
     margin-bottom: 64px;
 
+    @media screen and (max-width: 768px) {
+
+        text-align: center;
+    }
+
+
     @media screen and (max-width: 480px) {
+
         font-size: 2rem;
     }
     `;
 
 export const ServicesH2 = styled.h2` 
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-bottom: 10px;
 `;
 
 export const ServicesP = styled.p` 
     font-size: 1rem;
     text-align: center;
+    padding-top: 5px;
 `;
+
+export const CheckMark = styled(BsCheckLg)` 
+    margin-right: 8px;
+    font-size: 16px;
+    color: #FF7900;
+    `;
+
+export const DollarSign = styled(BsCurrencyDollar)` 
+    margin-right: 8px;
+    font-size: 1.2rem;
+    color: #FF7900;
+    `; 
