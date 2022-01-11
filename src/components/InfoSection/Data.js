@@ -1,4 +1,3 @@
-import { FaShoePrints } from 'react-icons/fa'
 
 //section one
 export const homeObjOne = {
