@@ -12,6 +12,7 @@ import {
     NavLinks,
     NavBtn,
     NavBtnLink,
+    NavLinksContact
 } from './NavbarElements';
 
 const Navbar = ({ toggle }) => {
@@ -83,12 +84,7 @@ const Navbar = ({ toggle }) => {
                             </NavItem>
 
                             <NavItem>
-                                <NavLinks to='/contact'
-                                smooth={true}
-                                duration={500}
-                                spy={true}
-                                exact='true'
-                                offset={-80}>Contact</NavLinks>
+                                <NavLinksContact to='/contact'>Contact</NavLinksContact>
                             </NavItem>
                         </NavMenu>
                         <NavBtn>

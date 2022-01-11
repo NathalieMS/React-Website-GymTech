@@ -90,6 +90,20 @@ export const NavBtn = styled.nav`
         display: none;
     }
 `
+export const NavLinksContact = styled(LinkR)`
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+
+    &.active{
+        border-bottom: 3px solid #FF7900;
+        }
+`
+
 export const NavBtnLink = styled(LinkR)`
     border-radius: 50px;
     background: #ff6d00;

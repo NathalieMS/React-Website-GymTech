@@ -1,15 +1,15 @@
 import React from 'react';
-import LogIn from '../LogIn';
+import Contact from '../Contact';
 import ScrollToTop from '../ScrollToTop';
 
 
-const LoginPage = () => {
+const ContactPage = () => {
     return (
         <>
             <ScrollToTop />
-            <LogIn />
+            <Contact />
         </>
     )
 }
 
-export default LoginPage;
+export default ContactPage;
