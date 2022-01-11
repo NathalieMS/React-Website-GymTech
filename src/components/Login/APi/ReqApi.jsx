@@ -22,11 +22,11 @@ function ReqApi() {
             <p>{aluno.nome}</p>
           </li>
           <p>CPF: {aluno.cpf}</p>
-          <p>Adress: {aluno.cidade}</p>
+          <p>Address: {aluno.endereco}</p>
           <p>State: {aluno.estado}</p>
           <p>Telephone: {aluno.telefone}</p>
           <p>E-mail: {aluno.email}</p>
-          <p> Plan: {aluno.plano}</p>
+          <p>Plan: {aluno.plano}</p>
         </ul>
       })}
     </div>
