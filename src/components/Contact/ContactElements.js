@@ -3,16 +3,15 @@ import { Link } from 'react-router-dom';
 
 export const Container = styled.div`
 min-height: 692px;
-position: fixed;
+/* position: fixed; */
 bottom: 0;
 left: 0;
 right: 0;
 top: 0;
 z-index: 0;
-overflow: hidden;
+/* overflow: hidden; */
 background: #f7f8fa;
-/* background: linear-gradient(135deg, hsla(180, 71%, 1%, 1) 5%, hsla(28, 100%, 50%, 1) 74%, hsla(34, 100%, 50%, 1) 91%); */
-/* background: #010606; */
+
 `;
 
 export const ContactWrap = styled.div`
@@ -28,9 +27,9 @@ justify-content: center;
 
 export const Icon = styled(Link)`
 margin-left: 32px;
-margin-top: -150px;
+margin-top: 32px;
 text-decoration: none;
-color:#ff7900;
+color:#ff4800;
 font-weight: 700;
 font-size: 32px;
 
@@ -67,19 +66,25 @@ background: linear-gradient(325deg, rgba(255,72,0,0.5357493339132529) 0%, rgba(2
 margin-top: 150px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     border-radius: 10px;
     height: 380px;
-    padding: 30px;
-    box-shadow: 0 1px 3px -2px rgba(0,0,0,0.2);
+    padding: 40px;
     transition: all 0.2s ease-in-out;
-    /* filter: grayscale(100%); */
+    
+
 
     &:hover {
-        /* filter: none; */
+
         transform: scale(1.1);
-        transition: all 0.2s ease-in-out;        
+        transition: all 0.2s ease-in-out;
+
+    }
+
+    &:hover h2{
+
+        color:#ff4800;
     }
 `;
 
@@ -88,12 +93,13 @@ export const ContactPhoto = styled.img`
     width: 160px;
     border-radius: 50%;
     margin-bottom: 10px;
+
 `;
 
 export const ContactH2 = styled.h2` 
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     text-align: center;
-    color: #fff;
+    color: #f7f8fa;
     margin-top: 18px;
     margin-bottom: 10px;
 `;
@@ -103,17 +109,18 @@ export const SocialContactContainer = styled.div`
     padding: 10px 0;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start ;
+    gap: 18px;
+    justify-content: space-evenly;
+
 `;
 
 
 export const SocialMediaLink = styled.a` 
-    color: #fff;
+    color: #f7f8fa;
     font-size: 32px;
 
     &:hover{
-        color: #010606;
+        color: #ff4800;
     }
 `;
 
