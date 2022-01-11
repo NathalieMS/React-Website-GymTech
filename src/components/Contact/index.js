@@ -1,9 +1,20 @@
 import React from 'react'
+import {
+    Container,
+    ContactWrap,
+    Icon
+   
+} from '././ContactElements'
+
 
 const Contact = () => {
     return (
         <>
-            <h1> Olá </h1>
+            <Container>
+                <ContactWrap>
+                    <Icon to='/'>GymTech</Icon>
+                </ContactWrap>
+            </Container>
         </>
     )
 }
