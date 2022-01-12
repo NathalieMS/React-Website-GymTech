@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Video from '../../videos/video.mp4';
+import Video from '../../videos/videonotfound.mp4';
 import { Button } from '../ButtonElements';
 import {
     HeroContainer,
@@ -12,6 +12,7 @@ import {
     ArrowRight,
     ArrowForward
 } from './PageNotFoundElements';
+
 
 const PageNotFound = () => {
     const [hover, setHover] = useState(false)
@@ -37,11 +38,11 @@ const PageNotFound = () => {
                         primary='true'
                         dark='true'
                         // se continuar como contato pode apagar o que está embaixo
-                        // smooth={true}
-                        // duration={500}
-                        // spy={true}
-                        // exact='true'
-                        // offset={-80}
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        exact='true'
+                        offset={-80}
                     >
                         Return to Home {hover ? <ArrowForward /> : <ArrowRight />}
                     </Button>
