@@ -12,7 +12,7 @@ import {
     Text
 } from './LogInElements'
 
-const LogIn = () => {
+const Login = () => {
     return (
         <>
             <Container>
@@ -35,4 +35,6 @@ const LogIn = () => {
     )
 }
 
-export default LogIn;
+export default Login;
+
+//comentário qualquer

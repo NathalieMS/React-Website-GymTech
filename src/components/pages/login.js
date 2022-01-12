@@ -1,5 +1,5 @@
 import React from 'react';
-import LogIn from '../Login';
+import LogIn from '../LogIn';
 import ScrollToTop from '../ScrollToTop';
 
 
