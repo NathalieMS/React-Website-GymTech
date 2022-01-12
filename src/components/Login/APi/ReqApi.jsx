@@ -64,7 +64,7 @@ function ReqApi() {
   }
 
   return (<Container>
-    This is a<button onClick={Alunos}>GET</button>
+    <button onClick={Alunos}>Search</button>
     <div>
       {alunos.map((aluno) => {
         return <ul>
@@ -81,8 +81,7 @@ function ReqApi() {
           <div>
           <li>
           <input
-            type="text"
-            name="cpf"
+            type="text" name="cpf"
             placeholder={aluno.cpf}
             disabled={disabledCPF}
             onChange={handleChange}
@@ -94,9 +93,8 @@ function ReqApi() {
           <div>
           <li>
           <input
-            type="text"
-            name="address"
-            placeholder={aluno.address}
+            type="text" name="address"
+            placeholder={aluno.endereco}
             disabled={disabledEndereco}
             onChange={handleChange}
             />
@@ -107,9 +105,8 @@ function ReqApi() {
           <div>
           <li>
           <input
-            type="text"
-            name="state"
-            placeholder={aluno.state}
+            type="text" name="state"
+            placeholder={aluno.estado}
             disabled={disabledEstado}
             onChange={handleChange}
             />
@@ -120,9 +117,8 @@ function ReqApi() {
           <div>
           <li>
           <input
-            type="text"
-            name="phone"
-            placeholder={aluno.phone}
+            type="text" name="phone"
+            placeholder={aluno.telefone}
             disabled={disabledTelefone}
             onChange={handleChange}
             />
@@ -133,8 +129,7 @@ function ReqApi() {
           <div>
           <li>
           <input
-            type="text"
-            name="email"
+            type="email" name="email"
             placeholder={aluno.email}
             disabled={disabledEmail}
             onChange={handleChange}
@@ -146,9 +141,8 @@ function ReqApi() {
           <div>
           <li>
           <input
-            type="text"
-            name="plan"
-            placeholder={aluno.plan}
+            type="text" name="plan"
+            placeholder={aluno.plano}
             disabled={disabledPlano}
             onChange={handleChange}
             />
