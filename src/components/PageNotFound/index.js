@@ -30,7 +30,7 @@ const PageNotFound = () => {
             <HeroContent>
                 <HeroH1>Oops, page not found</HeroH1>
                 <HeroP>
-                    The Big Squid Monster is getting ready
+                    The Big Squid Monster is coming!
                 </HeroP>
                 <HeroBtnWrapper>
                     <Button to='/' onMouseEnter={onHover} onMouseLeave={onHover}
