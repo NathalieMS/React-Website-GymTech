@@ -29,42 +29,48 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+# PROJETO FINAL: API Academia
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Descrição do projeto:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Este é o projeto final do curso de desenvolvimento full-stack da Resilia. Utilizamos o atributo "Alunos" para fazer a parte front-end desse projeto, onde o funcionário da Academia pode acessar os alunos a partir do CRUD.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Dependências Gerais:
+```js
+ "dependencies": {
+    "axios": "^0.24.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
+    "react-modules": "^1.0.8",
+    "react-router": "^6.2.1",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "^5.0.0",
+    "react-scroll": "^1.8.4",
+    "react-use-effect": "^0.0.1",
+    "styled-components": "^5.3.3",
+    "web-vitals": "^2.1.2"
+  }
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Rotas da API:
 
-## Learn More
+| Método | Rota | Funcionalidade |
+| ------ | ----- | ----------- |
+| **GET** | `http://localhost:3000/alunos` | Gets em todos|
+| **GET** | `http://localhost:3000/alunos/{id}` | Gets em alunos por {id} |
+| **POST** | `http://localhost:3000/alunos` | Entrada de novo aluno |
+| **PUT** | `http://localhost:3000/alunos/{id}` | Alterações por {id} |
+| **DELETE** | `http://localhost:3000/alunos/{id}` | Deleção de alunos {id} |
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Como executar?
+Clone o projeto.
+Execute o comando "npm install" para instalar as dependências necessárias.
+Inserir no terminal o comando "npm start".
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Responsáveis pelo projeto:
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Larissa Silva](https://github.com/LariCostaSilva)
+- [Murilo Mininel](https://github.com/MuriloMininel) 
+- [Nathalie Moreira](https://github.com/NathalieMS)
+- [Yasmin Reis](https://github.com/yasminreisk)
