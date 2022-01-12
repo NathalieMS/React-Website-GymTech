@@ -1,8 +1,7 @@
 import React, { useState} from 'react'
 import Axios from 'axios'
-import styled from 'styled-components'
 
-import './ReqApi.scss'
+import './Api.scss'
 
 function ReqApi() {
   const [alunos, setAlunos] = useState([])
