@@ -1,7 +1,17 @@
 import React, { useState } from 'react'
 import Axios from 'axios'
+import {
+    Container,
+    FormWrap,
+    Icon,
+    FormContent,
+    Form,
+    FormInput,
+    FormLabel,
+    FormButtonSearch
+  } from './StyledComponents'
 
-import './Api.scss'
+// import './Api.scss'
 
 function PostApi() {
 
@@ -77,28 +87,35 @@ function PostApi() {
     console.log ('email:', email)
     console.log ('plan:', plan)
 
-    return (<div>
-        <div className='putCont'>
-            <form>
-                <label>Name</label>
-                <input type='text' onChange={handleChange} name='name'/>
-                <label>CPF</label>
-                <input type='text' onChange={handleChange} name='cpf' />
-                <label>Address</label>
-                <input type='text' onChange={handleChange} name='address' />
-                <label>State</label>
-                <input type='text' onChange={handleChange} name='state' />
-                <label>Phone</label>
-                <input type='text' onChange={handleChange} name='phone' />
-                <label>Email</label>
-                <input type='email' onChange={handleChange} name='email' />
-                <label>Plan</label>
-                <input type='text' onChange={handleChange} name='plan' />
+    return (<Container>
+        <FormWrap>
+      <Icon to='/'>GymTech</Icon>
+        <FormContent>
+
+            <Form>
+
+                <FormLabel>Name</FormLabel>
+                <FormInput type='text' onChange={handleChange} name='name'/>
+                <FormLabel>CPF</FormLabel>
+                <FormInput type='text' onChange={handleChange} name='cpf' />
+                <FormLabel>Address</FormLabel>
+                <FormInput type='text' onChange={handleChange} name='address' />
+                <FormLabel>State</FormLabel>
+                <FormInput type='text' onChange={handleChange} name='state' />
+                <FormLabel>Phone</FormLabel>
+                <FormInput type='text' onChange={handleChange} name='phone' />
+                <FormLabel>Email</FormLabel>
+                <FormInput type='email' onChange={handleChange} name='email' />
+                <FormLabel>Plan</FormLabel>
+                <FormInput type='text' onChange={handleChange} name='plan' />
                 
-            </form>
-            <button onClick={Alunos}>Save</button>
-        </div>
-    </div>);
+                <FormButtonSearch onClick={Alunos}>Save</FormButtonSearch>
+
+            </Form>
+            </FormContent>
+
+        </FormWrap>
+    </Container>);
 }
 
 
