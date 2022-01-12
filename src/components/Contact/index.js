@@ -38,12 +38,12 @@ const Contact = () => {
                     <ContactH2>Larissa Silva</ContactH2>
 
                     <SocialContactContainer>
-                    <SocialMediaLink href="//https://www.linkedin.com/" target="_blank"
+                    <SocialMediaLink href="https://www.linkedin.com/in/larissa-silva-773228100/" target="_blank"
                                 aria-label="Linkedin">
                                 <FaLinkedin />
                             </SocialMediaLink>
 
-                            <SocialMediaLink href="//https://www.github.com/" target="_blank"
+                            <SocialMediaLink href="https://github.com/LariCostaSilva/" target="_blank"
                                 aria-label="GitHub">
                                 <FaGithub />
                             </SocialMediaLink>
@@ -55,12 +55,12 @@ const Contact = () => {
                     <ContactH2>Murilo Mininel</ContactH2>
 
                     <SocialContactContainer>
-                    <SocialMediaLink href="//https://www.linkedin.com/" target="_blank"
+                    <SocialMediaLink href="https://www.linkedin.com/in/murilo-rodrigues-259011212/" target="_blank"
                                 aria-label="Linkedin">
                                 <FaLinkedin />
                             </SocialMediaLink>
 
-                            <SocialMediaLink href="//https://www.github.com/" target="_blank"
+                            <SocialMediaLink href="https://github.com/muridev017" target="_blank"
                                 aria-label="GitHub">
                                 <FaGithub />
                             </SocialMediaLink>
@@ -72,12 +72,12 @@ const Contact = () => {
                     <ContactH2>Nathalie Moreira</ContactH2>
 
                     <SocialContactContainer>
-                    <SocialMediaLink href="//https://www.linkedin.com/" target="_blank"
+                    <SocialMediaLink href="https://www.linkedin.com/in/nathalie-moreira/" target="_blank"
                                 aria-label="Linkedin">
                                 <FaLinkedin />
                             </SocialMediaLink>
 
-                            <SocialMediaLink href="//https://www.github.com/" target="_blank"
+                            <SocialMediaLink href="https://github.com/NathalieMS" target="_blank"
                                 aria-label="GitHub">
                                 <FaGithub />
                             </SocialMediaLink>
@@ -89,12 +89,12 @@ const Contact = () => {
                     <ContactH2>Yasmin Reis</ContactH2>
 
                     <SocialContactContainer>
-                    <SocialMediaLink href="//https://www.linkedin.com/" target="_blank"
+                    <SocialMediaLink href="https://www.linkedin.com/in/yasminreisk/" target="_blank"
                                 aria-label="Linkedin">
                                 <FaLinkedin />
                             </SocialMediaLink>
 
-                            <SocialMediaLink href="//https://www.github.com/" target="_blank"
+                            <SocialMediaLink href="https://github.com/yasminreisk" target="_blank"
                                 aria-label="GitHub">
                                 <FaGithub />
                             </SocialMediaLink>
