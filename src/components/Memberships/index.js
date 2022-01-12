@@ -40,7 +40,7 @@ const Memberships = () => {
                     <MembershipsChecks>
                     <MembershipsP>< CheckMark/>30 pre-built workouts</MembershipsP>
                     <MembershipsP>< CheckMark/>24/7 Gym access</MembershipsP>
-                    <MembershipsP>< CheckMark/>Access to 10 classes / week</MembershipsP>
+                    <MembershipsP>< CheckMark/>Access to 7 classes / week</MembershipsP>
                     <MembershipsP>< CheckMark/>Unlimited access to all of our studios</MembershipsP>
                     </MembershipsChecks>
                     <MembershipsH2><DollarSign />119.99</MembershipsH2>
