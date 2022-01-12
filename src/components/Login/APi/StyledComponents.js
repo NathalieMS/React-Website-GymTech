@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-min-height: 692px;
+min-height: 792px;
 bottom: 0;
 left: 0;
 right: 0;
@@ -76,6 +76,7 @@ color: #fff;
 `;
 
 export const FormInput = styled.input`
+width: 90%;
 padding: 16px 16px;
 margin-bottom: 32px;
 border: none;
@@ -101,8 +102,11 @@ font-size: 14px;
 cursor: pointer;
 `;
 
-export const EditButton = styled.button`
-font-size: 16px;
+export const EditButton = styled.p`
+display: flex;
+font-size: 42px;
+width: 30px;
+height: auto;
 color: #FF7900;
 cursor: pointer;
 margin-left: 2px;
@@ -114,7 +118,7 @@ margin-left: 2px;
 export const FormButtonSearch = styled.button`
 background: #FF7900;
 padding: 32px 0;
-width: 30%; 
+width: 300px; 
 border: none;
 border-radius: 4px;
 color: #fff;
@@ -123,3 +127,7 @@ cursor: pointer;
 margin-bottom: 10px;
 margin-top: 20px;
 `
+export const FormEditInput = styled.div`  
+    display:flex;
+    width: 100%;
+` 

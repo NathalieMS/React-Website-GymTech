@@ -6,12 +6,14 @@ import {
   Icon,
   FormButton,
   FormContent,
+  FormEditInput,
   Form,
   FormInput,
   FormLabel,
   EditButton,
   FormButtonSearch
 } from './StyledComponents'
+import { Loading } from './Loading';
 
 import { BsPencilSquare } from "react-icons/bs";
  
@@ -40,9 +42,10 @@ function ReqApi() {
  
  
   const Alunos = () => {
+    setIsLoading(false);
     Axios.get("https://api-academia-alunos.herokuapp.com/alunos").then((response) => {
       setAlunos(response.data.alunos);
-      console.log (response)
+      setIsLoading(true);
     }
     )
   }
@@ -68,6 +71,13 @@ function ReqApi() {
     })
   }
  
+  const [isLoading, setIsLoading] = useState(true);
+
+
+
+
+
+
   function handleChange({target: { name, value }}) {
     if(name === 'name') setName(value)
     if(name === 'cpf') setCpf(value)
@@ -85,23 +95,28 @@ return (
  
     <FormContent>
 
-    <FormButtonSearch onClick={Alunos}>Search</FormButtonSearch>
+    <FormButtonSearch onClick={Alunos}>List all members:</FormButtonSearch>
 
-      {alunos.map((aluno) => {
+{ isLoading ?  alunos.map((aluno) => {
+        
+        
  
         return <>
        <Form>
 
 
             <FormLabel>Name: </FormLabel>
+            <FormEditInput>
             <FormInput type="text" name="name"
             placeholder={aluno.nome}
             disabled={disabledNome}
             onChange={handleChange} />
             <EditButton onClick={() => setDisabledNome(!disabledNome)}><BsPencilSquare /></EditButton>
+            </FormEditInput>
          
          
-          <FormLabel>Cpf: </FormLabel>
+          <FormLabel>Social Number: </FormLabel>
+          <FormEditInput>
           <FormInput
             type="text" name="cpf"
             placeholder={aluno.cpf}
@@ -109,9 +124,11 @@ return (
             onChange={handleChange}
             />
           <EditButton onClick={() => setDisabledCPF(!disabledCPF)}><BsPencilSquare /></EditButton>
+            </FormEditInput>
 
          
           <FormLabel>Address: </FormLabel>
+          <FormEditInput>
           <FormInput
             type="text" name="address"
             placeholder={aluno.endereco}
@@ -119,8 +136,10 @@ return (
             onChange={handleChange}
             />
           <EditButton onClick={() => setDisabledEndereco(!disabledEndereco)}><BsPencilSquare /></EditButton>
+            </FormEditInput>
          
           <FormLabel>State:  </FormLabel>
+          <FormEditInput>
           <FormInput
             type="text" name="state"
             placeholder={aluno.estado}
@@ -128,9 +147,11 @@ return (
             onChange={handleChange}
             />
           <EditButton onClick={() => setDisabledEstado(!disabledEstado)}><BsPencilSquare /></EditButton>
+            </FormEditInput>
         
          
           <FormLabel>Phone: </FormLabel>
+          <FormEditInput>
           <FormInput
             type="text" name="phone"
             placeholder={aluno.telefone}
@@ -138,8 +159,10 @@ return (
             onChange={handleChange}
             />
           <EditButton onClick={() => setDisabledTelefone(!disabledTelefone)}><BsPencilSquare /></EditButton>
+            </FormEditInput>
          
           <FormLabel>Email: </FormLabel>
+          <FormEditInput>
           <FormInput
             type="email" name="email"
             placeholder={aluno.email}
@@ -147,9 +170,11 @@ return (
             onChange={handleChange}
             />
           <EditButton onClick={() => setDisabledEmail(!disabledEmail)}><BsPencilSquare /></EditButton>
+            </FormEditInput>
         
        
-          <FormLabel>Plan: </FormLabel>
+          <FormLabel>Membership: </FormLabel>
+          <FormEditInput>
           <FormInput
             type="text" name="plan"
             placeholder={aluno.plano}
@@ -157,6 +182,7 @@ return (
             onChange={handleChange}
             />
           <EditButton onClick={() => setDisabledPlano(!disabledPlano)}><BsPencilSquare /></EditButton>
+            </FormEditInput>
          
 
           <FormButton className='buttonCont' onClick={()=>DelApi(aluno.id)}>Delete member</FormButton>
@@ -165,7 +191,14 @@ return (
           </Form>
           </>
       
-      })}
+      }) : <Loading /> 
+
+
+}
+ 
+
+      
+     
       </FormContent>
   </FormWrap>
   </Container>

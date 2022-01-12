@@ -106,7 +106,7 @@ function PostApi() {
                 <FormInput type='text' onChange={handleChange} name='phone' />
                 <FormLabel>Email</FormLabel>
                 <FormInput type='email' onChange={handleChange} name='email' />
-                <FormLabel>Plan</FormLabel>
+                <FormLabel>Membership</FormLabel>
                 <FormInput type='text' onChange={handleChange} name='plan' />
                 
                 <FormButtonSearch onClick={Alunos}>Save</FormButtonSearch>
