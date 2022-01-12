@@ -29,7 +29,7 @@ const Memberships = () => {
                     <MembershipsP>< CheckMark/>22 pre-built workouts</MembershipsP>
                     <MembershipsP>< CheckMark/>24/7 Gym access</MembershipsP>
                     <MembershipsP>< CheckMark/>Access to 4 classes / week</MembershipsP>
-                    <MembershipsP>< CheckMark/>Choose 2 studios</MembershipsP>
+                    <MembershipsP>< CheckMark/>Access to one studio only - chosen by you</MembershipsP>
                     </MembershipsChecks>
                     <MembershipsH2><DollarSign />79.99</MembershipsH2>
                 </MembershipsCard>
@@ -40,7 +40,7 @@ const Memberships = () => {
                     <MembershipsChecks>
                     <MembershipsP>< CheckMark/>30 pre-built workouts</MembershipsP>
                     <MembershipsP>< CheckMark/>24/7 Gym access</MembershipsP>
-                    <MembershipsP>< CheckMark/>Unlimited access to classes</MembershipsP>
+                    <MembershipsP>< CheckMark/>Access to 10 classes / week</MembershipsP>
                     <MembershipsP>< CheckMark/>Unlimited access to all of our studios</MembershipsP>
                     </MembershipsChecks>
                     <MembershipsH2><DollarSign />119.99</MembershipsH2>
