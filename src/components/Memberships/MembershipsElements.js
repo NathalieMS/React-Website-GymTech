@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { BsCheckLg, BsCurrencyDollar } from 'react-icons/bs';
 
-export const ServicesContainer = styled.div`  
+export const MembershipsContainer = styled.div`  
     height: 800px;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@ export const ServicesContainer = styled.div`
     }
 `;
 
-export const ServicesWrapper = styled.div` 
+export const MembershipsWrapper = styled.div` 
     max-width: 1000px;
     margin: 0 auto;
     display: grid;
@@ -38,7 +38,7 @@ export const ServicesWrapper = styled.div`
 
 `;
 
-export const ServicesCard = styled.div` 
+export const MembershipsCard = styled.div` 
     background: #fff;
     display: flex;
     flex-direction: column;
@@ -56,18 +56,18 @@ export const ServicesCard = styled.div`
         cursor: pointer;        
     }
 `;
-export const ServicesChecks = styled.div` 
+export const MembershipsChecks = styled.div` 
     min-height: 240px;
     padding: 10px 0;
 `;
 
-export const ServicesIcon = styled.img` 
+export const MembershipsIcon = styled.img` 
     height: 160px;
     width: 160px;
     margin-bottom: 10px;
 `;
 
-export const ServicesH1 = styled.h1` 
+export const MembershipsH1 = styled.h1` 
     font-size: 2.5rem;
     color: #fff;
     margin-bottom: 64px;
@@ -84,13 +84,13 @@ export const ServicesH1 = styled.h1`
     }
     `;
 
-export const ServicesH2 = styled.h2` 
+export const MembershipsH2 = styled.h2` 
     font-size: 1.2rem;
     margin-top: 18px;
     margin-bottom: 10px;
 `;
 
-export const ServicesP = styled.p` 
+export const MembershipsP = styled.p` 
     font-size: 1rem;
     text-align: center;
     padding-top: 5px;

@@ -3,7 +3,7 @@ import HeroSection from '../HeroSection';
 import InfoSection from '../InfoSection';
 import { homeObjOne, homeObjTwo, homeObjFour} from '../InfoSection/Data';
 import Navbar from '../Navbar'; 
-import Services from '../Services';
+import Memberships from '../Memberships';
 import Sidebar from '../Sidebar';
 import Footer from '../Footer';
 
@@ -21,7 +21,7 @@ const toggle = () =>{
                 <HeroSection />
                 <InfoSection {...homeObjOne}/>
                 <InfoSection {...homeObjTwo}/>
-                <Services />
+                <Memberships />
   
                 <InfoSection {...homeObjFour}/>
                 <Footer />
