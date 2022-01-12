@@ -79,13 +79,28 @@ function ReqApi() {
             disabled={disabledCPF}
             onChange={handleChange}
             />
+            {/* BOM ṔROJETO GUYS, FUUUUI */}
           {/* repetir botao de edicao para todos */}
           <button onClick={() => setDisabledCPF(!disabledCPF)}>Editar</button>
+          
           <input type="text" name="address" value={aluno.endereco} disabled={disabledEndereco} />
+          <button onClick={() => setDisabledNome(!disabledNome)}>Editar</button>
+          <input
+            type="text"
+            name="address"
+            placeholder={aluno.address}
+            disabled={disabledEndereco}
+            onChange={handleChange}
+            />
+          <button onClick={() => setDisabledEndereco(!disabledEndereco)}>Editar</button>
           <input type="text" name="state" value={aluno.estado} disabled={disabledEstado} />
+          <button onClick={() => setDisabledEstado(!disabledEndereco)}>Editar</button>
           <input type="text" name="phone" value={aluno.telefone} disabled={disabledTelefone} />
+          <button onClick={() => setDisabledTelefone(!disabledTelefone)}>Editar</button>
           <input type="text" name="email" value={aluno.email} disabled={disabledEmail} />
+          <button onClick={() => setDisabledEmail(!disabledEmail)}>Editar</button>
           <input type="text" name="plan" value={aluno.plano} disabled={disabledPlano} />
+          <button onClick={() => setDisabledPlano(!disabledPlano)}>Editar</button>
 
           This is a<button onClick={()=>DelApi(aluno.id)}>Delete</button> 
           This is a<button onClick={()=>PutApi(aluno.id)}>Edit</button> 
