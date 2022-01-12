@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState} from 'react'
 import Axios from 'axios'
 import styled from 'styled-components'
 
@@ -68,10 +68,18 @@ function ReqApi() {
     <div>
       {alunos.map((aluno) => {
         return <ul>
+          <div>
           <li>
-            <input type="text" name="name" placeholder={aluno.nome} disabled={disabledNome} />
+            <input type="text" name="name" 
+            placeholder={aluno.nome} 
+            disabled={disabledNome} 
+            onChange={handleChange} />
+            <button onClick={() => setDisabledNome(!disabledNome)}>Editar</button>
           </li>
-          <p>CPF: {aluno.cpf}</p>
+          </div>
+
+          <div>
+          <li>
           <input
             type="text"
             name="cpf"
@@ -79,12 +87,12 @@ function ReqApi() {
             disabled={disabledCPF}
             onChange={handleChange}
             />
-            {/* BOM ṔROJETO GUYS, FUUUUI */}
-          {/* repetir botao de edicao para todos */}
           <button onClick={() => setDisabledCPF(!disabledCPF)}>Editar</button>
-          
-          <input type="text" name="address" value={aluno.endereco} disabled={disabledEndereco} />
-          <button onClick={() => setDisabledNome(!disabledNome)}>Editar</button>
+          </li>
+          </div>
+
+          <div>
+          <li>
           <input
             type="text"
             name="address"
@@ -93,14 +101,60 @@ function ReqApi() {
             onChange={handleChange}
             />
           <button onClick={() => setDisabledEndereco(!disabledEndereco)}>Editar</button>
-          <input type="text" name="state" value={aluno.estado} disabled={disabledEstado} />
-          <button onClick={() => setDisabledEstado(!disabledEndereco)}>Editar</button>
-          <input type="text" name="phone" value={aluno.telefone} disabled={disabledTelefone} />
+          </li>
+          </div>
+
+          <div>
+          <li>
+          <input
+            type="text"
+            name="state"
+            placeholder={aluno.state}
+            disabled={disabledEstado}
+            onChange={handleChange}
+            />
+          <button onClick={() => setDisabledEstado(!disabledEstado)}>Editar</button>
+          </li>
+          </div>
+
+          <div>
+          <li>
+          <input
+            type="text"
+            name="phone"
+            placeholder={aluno.phone}
+            disabled={disabledTelefone}
+            onChange={handleChange}
+            />
           <button onClick={() => setDisabledTelefone(!disabledTelefone)}>Editar</button>
-          <input type="text" name="email" value={aluno.email} disabled={disabledEmail} />
+          </li>
+          </div>
+
+          <div>
+          <li>
+          <input
+            type="text"
+            name="email"
+            placeholder={aluno.email}
+            disabled={disabledEmail}
+            onChange={handleChange}
+            />
           <button onClick={() => setDisabledEmail(!disabledEmail)}>Editar</button>
-          <input type="text" name="plan" value={aluno.plano} disabled={disabledPlano} />
+          </li>
+          </div>
+          
+          <div>
+          <li>
+          <input
+            type="text"
+            name="plan"
+            placeholder={aluno.plan}
+            disabled={disabledPlano}
+            onChange={handleChange}
+            />
           <button onClick={() => setDisabledPlano(!disabledPlano)}>Editar</button>
+          </li>
+          </div>
 
           This is a<button onClick={()=>DelApi(aluno.id)}>Delete</button> 
           This is a<button onClick={()=>PutApi(aluno.id)}>Edit</button> 
