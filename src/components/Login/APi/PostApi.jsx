@@ -24,7 +24,7 @@ function PostApi() {
     const [plan, setPlan] = useState('')
 
     const Alunos = () => {
-        Axios.post(`https://api-academia-alunos.herokuapp.com/alunos`, { nome: name, cpf: cpf, endereco: address, estado: state, telefone: phone, email: email, plano: plan }).then((response) => {
+        Axios.post(`https://academia-api-t8.herokuapp.com/alunos`, { nome: name, cpf: cpf, endereco: address, estado: state, telefone: phone, email: email, plano: plan }).then((response) => {
             console.log(response)
         }
         )
