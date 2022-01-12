@@ -2,6 +2,8 @@ import React, { useState} from 'react'
 import Axios from 'axios'
 import styled from 'styled-components'
 
+import './ReqApi.scss'
+
 function ReqApi() {
   const [alunos, setAlunos] = useState([])
   // estados de disabled
@@ -63,13 +65,17 @@ function ReqApi() {
     if(name === 'plan') setPlan(value)
   }
 
-  return (<Container>
+  return (<div className='conteiner'>
+    <div className='searchButt'>
     <button onClick={Alunos}>Search</button>
-    <div>
+    </div>
+    <div className='formCont'>
+    <div className='section'>
       {alunos.map((aluno) => {
         return <ul>
-          <div>
+          <div className='section'>
           <li>
+            <label>Name: </label>
             <input type="text" name="name" 
             placeholder={aluno.nome} 
             disabled={disabledNome} 
@@ -77,9 +83,9 @@ function ReqApi() {
             <button onClick={() => setDisabledNome(!disabledNome)}>Editar</button>
           </li>
           </div>
-
-          <div>
+          <div className='section'>
           <li>
+          <label>Cpf: </label>
           <input
             type="text" name="cpf"
             placeholder={aluno.cpf}
@@ -90,8 +96,9 @@ function ReqApi() {
           </li>
           </div>
 
-          <div>
+          <div className='section'>
           <li>
+          <label>Address: </label>
           <input
             type="text" name="address"
             placeholder={aluno.endereco}
@@ -102,8 +109,9 @@ function ReqApi() {
           </li>
           </div>
 
-          <div>
+          <div className='section'>
           <li>
+          <label>State:  </label>
           <input
             type="text" name="state"
             placeholder={aluno.estado}
@@ -114,8 +122,9 @@ function ReqApi() {
           </li>
           </div>
 
-          <div>
+          <div className='section'>
           <li>
+          <label>Phone: </label>
           <input
             type="text" name="phone"
             placeholder={aluno.telefone}
@@ -126,8 +135,9 @@ function ReqApi() {
           </li>
           </div>
 
-          <div>
+          <div className='section'>
           <li>
+          <label>Email: </label>
           <input
             type="email" name="email"
             placeholder={aluno.email}
@@ -138,8 +148,9 @@ function ReqApi() {
           </li>
           </div>
           
-          <div>
+          <div className='section'>
           <li>
+          <label>Plan: </label>
           <input
             type="text" name="plan"
             placeholder={aluno.plano}
@@ -150,24 +161,13 @@ function ReqApi() {
           </li>
           </div>
 
-          This is a<button onClick={()=>DelApi(aluno.id)}>Delete</button> 
+          This is a<button className='buttonCont' onClick={()=>DelApi(aluno.id)}>Delete</button> 
           This is a<button onClick={()=>PutApi(aluno.id)}>Edit</button> 
         </ul>
       })}
     </div>
-  </Container>);
+    </div>
+  </div>);
 }
-
-const Container = styled.div `
-min-height: 692px;
-position: fixed;
-bottom: 0;
-left: 0;
-right: 0;
-top: 0;
-z-index: 0;
-overflow: hidden;
-background: linear-gradient(225deg, #ffc93f 0, #ffba41 12.5%, #ffaa43 25%, #ff9a45 37.5%, #f98946 50%, #eb7946 62.5%, #de6b47 75%, #d15e48 87.5%, #c65449 100%);
-`
 
 export default ReqApi;

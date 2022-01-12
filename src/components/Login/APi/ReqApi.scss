@@ -1,0 +1,40 @@
+
+@mixin borderAndMargin {
+    border: 1px solid black;
+    margin: 0.5vw;
+}
+
+.conteiner{
+    min-height: 692px;
+position: absolute ;
+bottom: 2px;
+left: 2px;
+right: 0;
+top: 0;
+z-index: 0;
+overflow: visible;
+background: linear-gradient(225deg, #ffc93f 0, #ffba41 12.5%, #ffaa43 25%, #ff9a45 37.5%, #f98946 50%, #eb7946 62.5%, #de6b47 75%, #d15e48 87.5%, #c65449 100%);
+}
+
+.searchButt{
+    text-align: center;
+    margin-top: 5em;
+}
+
+.formCont{
+    height: 100%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+
+.section{
+    @include borderAndMargin();
+    text-align: center;
+}
+
+.buttonCont{
+    text-align: center;
+}
+
