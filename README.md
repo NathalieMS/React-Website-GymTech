@@ -73,4 +73,4 @@ Inserir no terminal o comando "npm start".
 - [Larissa Silva](https://github.com/LariCostaSilva)
 - [Murilo Mininel](https://github.com/MuriloMininel) 
 - [Nathalie Moreira](https://github.com/NathalieMS)
-- [Yasmin Reis] (https://github.com/yasminreisk)
+- [Yasmin Reis](https://github.com/yasminreisk)
