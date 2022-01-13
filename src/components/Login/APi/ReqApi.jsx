@@ -30,14 +30,25 @@ function ReqApi() {
   const [disabledEmail, setDisabledEmail] = useState(true)
   const [disabledPlano, setDisabledPlano] = useState(true)
  
+  const [data, setData] = useState({
+    nome: '',
+    cpf: '',
+    endereco: '',
+    estado: '',
+    telefone: '',
+    email: '',
+    plano: ''
+  });
+
+
   // estados de campos
-  const [name, setName] = useState('')
-  const [cpf, setCpf] = useState('')
-  const [address, setAddress] = useState('')
-  const [state, setState] = useState('')
-  const [phone, setPhone] = useState('')
-  const [plan, setEmail] = useState('')
-  const [email, setPlan] = useState('')
+  // const [name, setName] = useState('')
+  // const [cpf, setCpf] = useState('')
+  // const [address, setAddress] = useState('')
+  // const [state, setState] = useState('')
+  // const [phone, setPhone] = useState('')
+  // const [plan, setEmail] = useState('')
+  // const [email, setPlan] = useState('')
  
  
  
@@ -57,30 +68,33 @@ function ReqApi() {
   }
  
   const PutApi = (id) =>{
-    Axios.put(`https://api-academia-alunos.herokuapp.com/alunos/${id}`, {
-      nome: name,
-      cpf: cpf,
-      endereco: address,
-      estado: state,
-      telefone: phone,
-      email: email,
-      plano: plan
-  }).then (() =>{
+    Axios.put(`https://api-academia-alunos.herokuapp.com/alunos/${id}`,
+    data 
+  , {'Content-Type': 'application/json'}).then (() =>{
       Alunos ()
     })
   }
  
   const [isLoading, setIsLoading] = useState(true);
 
-  function handleChange({target: { name, value }}) {
-    if(name === 'name') setName(value)
-    if(name === 'cpf') setCpf(value)
-    if(name === 'adress') setAddress(value)
-    if(name === 'state') setState(value)
-    if(name === 'phone') setPhone(value)
-    if(name === 'email') setEmail(value)
-    if(name === 'plan') setPlan(value)
-  }
+  const handleChange = ({target: {value, name}}) => {
+
+          setData({
+            ...data, [name]: value,
+          });
+      }
+
+  // function handleChange({target: { name, value }}) {
+  //   if(name === 'name') setName(value)
+  //   if(name === 'cpf') setCpf(value)
+  //   if(name === 'adress') setAddress(value)
+  //   if(name === 'state') setState(value)
+  //   if(name === 'phone') setPhone(value)
+  //   if(name === 'email') setEmail(value)
+  //   if(name === 'plan') setPlan(value)
+  // }
+
+  console.log(alunos)
 return (
  
   <Container>
@@ -92,19 +106,22 @@ return (
     <FormButtonSearch onClick={Alunos}>List all members:</FormButtonSearch>
 
 { isLoading ?  alunos.map((aluno) => {
-        
-        
  
         return <>
-       <Form>
+       <Form onSubmit={(e) => {
+         e.preventDefault()
+         PutApi(aluno.id)
+       }}>
 
 
             <FormLabel>Name: </FormLabel>
             <FormEditInput>
-            <FormInput type="text" name="name"
+            <FormInput type="text" name="nome"
             placeholder={aluno.nome}
             disabled={disabledNome}
-            onChange={handleChange} />
+            onChange={handleChange}
+
+             />
             <EditButton onClick={() => setDisabledNome(!disabledNome)}><BsPencilSquare /></EditButton>
             </FormEditInput>
          
@@ -124,10 +141,11 @@ return (
           <FormLabel>Address: </FormLabel>
           <FormEditInput>
           <FormInput
-            type="text" name="address"
+            type="text" name="endereco"
             placeholder={aluno.endereco}
             disabled={disabledEndereco}
             onChange={handleChange}
+
             />
           <EditButton onClick={() => setDisabledEndereco(!disabledEndereco)}><BsPencilSquare /></EditButton>
             </FormEditInput>
@@ -135,10 +153,11 @@ return (
           <FormLabel>State:  </FormLabel>
           <FormEditInput>
           <FormInput
-            type="text" name="state"
+            type="text" name="cidade"
             placeholder={aluno.estado}
             disabled={disabledEstado}
             onChange={handleChange}
+
             />
           <EditButton onClick={() => setDisabledEstado(!disabledEstado)}><BsPencilSquare /></EditButton>
             </FormEditInput>
@@ -147,10 +166,11 @@ return (
           <FormLabel>Phone: </FormLabel>
           <FormEditInput>
           <FormInput
-            type="text" name="phone"
+            type="text" name="telefone"
             placeholder={aluno.telefone}
             disabled={disabledTelefone}
             onChange={handleChange}
+
             />
           <EditButton onClick={() => setDisabledTelefone(!disabledTelefone)}><BsPencilSquare /></EditButton>
             </FormEditInput>
@@ -162,6 +182,7 @@ return (
             placeholder={aluno.email}
             disabled={disabledEmail}
             onChange={handleChange}
+
             />
           <EditButton onClick={() => setDisabledEmail(!disabledEmail)}><BsPencilSquare /></EditButton>
             </FormEditInput>
@@ -170,17 +191,18 @@ return (
           <FormLabel>Membership: </FormLabel>
           <FormEditInput>
           <FormInput
-            type="text" name="plan"
+            type="text" name="plano"
             placeholder={aluno.plano}
             disabled={disabledPlano}
             onChange={handleChange}
+
             />
           <EditButton onClick={() => setDisabledPlano(!disabledPlano)}><BsPencilSquare /></EditButton>
             </FormEditInput>
          
 
-          <FormButton className='buttonCont' onClick={()=>DelApi(aluno.id)}>Delete member</FormButton>
-          <FormButton onClick={()=>PutApi(aluno.id)}>Reset member</FormButton>
+          <FormButton type='button' className='buttonCont' onClick={()=>DelApi(aluno.id)}>Delete member</FormButton>
+          <FormButton type='submit'>Reset member</FormButton>
 
           </Form>
           </>
