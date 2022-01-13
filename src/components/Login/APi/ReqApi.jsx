@@ -43,7 +43,7 @@ function ReqApi() {
  
   const Alunos = () => {
     setIsLoading(false);
-    Axios.get("https://academia-api-t8.herokuapp.com/alunos").then((response) => {
+    Axios.get("https://api-academia-alunos.herokuapp.com/alunos").then((response) => {
       setAlunos(response.data.alunos);
       setIsLoading(true);
     }
@@ -51,20 +51,19 @@ function ReqApi() {
   }
  
   const DelApi = (id) =>{
-    Axios.delete(`https://academia-api-t8.herokuapp.com/alunos/${id}`).then (() =>{
+    Axios.delete(`https://api-academia-alunos.herokuapp.com/alunos/${id}`).then (() =>{
       Alunos ()
     })
   }
  
   const PutApi = (id) =>{
-    Axios.put(`https://academia-api-t8.herokuapp.com/alunos/${id}`, {
+    Axios.put(`https://api-academia-alunos.herokuapp.com/alunos/${id}`, {
       nome: name,
       cpf: cpf,
       endereco: address,
       estado: state,
       telefone: phone,
       email: email,
-      idade: null,
       plano: plan
   }).then (() =>{
       Alunos ()
@@ -72,11 +71,6 @@ function ReqApi() {
   }
  
   const [isLoading, setIsLoading] = useState(true);
-
-
-
-
-
 
   function handleChange({target: { name, value }}) {
     if(name === 'name') setName(value)
