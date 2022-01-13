@@ -36,5 +36,3 @@ const Login = () => {
 }
 
 export default Login;
-
-//comentário qualquer

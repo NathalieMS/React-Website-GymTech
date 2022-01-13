@@ -19,7 +19,8 @@ import {
     ContactPhoto,
     ContactH2,
     SocialContactContainer,
-    SocialMediaLink
+    SocialMediaLink,
+    ContactH1
    
 } from '././ContactElements'
 
@@ -29,7 +30,8 @@ const Contact = () => {
         <>
             <Container>
                 <ContactWrap>
-                    <Icon to='/'>GymTech</Icon>
+
+            <ContactH1>Meet the team</ContactH1>
 
                     <ContactContainer>
                         

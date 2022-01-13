@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import background from '../../images/contact_background.jpg'
+
 
 export const Container = styled.div`
-min-height: 692px;
+min-height: 840px;
 /* position: fixed; */
 bottom: 0;
 left: 0;
@@ -10,7 +12,12 @@ right: 0;
 top: 0;
 z-index: 0;
 /* overflow: hidden; */
-background: #f7f8fa;
+background-image: url(${background});
+background-size: 100% 150%;
+
+@media screen and (max-width: 768px) {
+    background-size: cover;
+    }
 
 `;
 
@@ -46,7 +53,7 @@ export const ContactContainer = styled.div`
     grid-template-columns: 1fr 1fr 1fr 1fr;
     align-items: center;
     grid-gap: 48px;
-    padding: 0 50px;
+    /* padding: 0 50px; */
 
     @media screen and (max-width: 1000px) {
         grid-template-columns: 1fr 1fr;
@@ -60,10 +67,11 @@ export const ContactContainer = styled.div`
 `;
 
 export const ContactCard = styled.div` 
-background: rgb(255,72,0);
-background: linear-gradient(325deg, rgba(255,72,0,0.5357493339132529) 0%, rgba(255,121,0,0.54) 35%, rgba(255,170,0,0.54) 100%);
+/* background: #0E1527; */
 
-margin-top: 150px;
+/* background: linear-gradient(325deg, rgba(255,72,0,0.5357493339132529) 0%, rgba(255,121,0,0.54) 35%, rgba(255,170,0,0.54) 100%); */
+
+margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -95,6 +103,20 @@ export const ContactPhoto = styled.img`
     margin-bottom: 10px;
 
 `;
+export const ContactH1 = styled.h1` 
+display:flex;
+flex-direction: column;
+align-items: center;
+margin-top: 120px;
+    font-size: 2.8rem;
+    color: #fff;
+    margin-bottom: 64px;
+
+    @media screen and (max-width: 768px) {
+
+        text-align: center;
+    }
+`
 
 export const ContactH2 = styled.h2` 
     font-size: 1.6rem;

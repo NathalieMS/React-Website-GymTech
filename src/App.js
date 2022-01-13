@@ -4,6 +4,7 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Home from './components/pages';
 import LoginPage from './components/pages/login';
 import ContactPage from './components/pages/contact';
+import PageNotFoundPage from './components/pages/pagenotfound';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />  
         <Route path="/login" element={<LoginPage/>} />
         <Route path="/contact" element={<ContactPage/>} />
+        <Route path="/*" element={<PageNotFoundPage/>} />
 
 
         </Routes>
@@ -21,3 +23,4 @@ function App() {
 }
 
 export default App;
+
