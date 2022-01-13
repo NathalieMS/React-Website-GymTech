@@ -1,15 +1,28 @@
-import React from 'react';
-import LogIn from '../LogIn';
+import React, {useState} from 'react';
+import Contact from '../Contact';
 import ScrollToTop from '../ScrollToTop';
+import Footer from '../Footer';
+import Sidebar from '../Sidebar';
+import Navbar from '../Navbar';
 
 
-const LoginPage = () => {
+const ContactPage = () => {
+
+    const[isOpen, setIsOpen] = useState(false);
+
+const toggle = () =>{
+    setIsOpen(!isOpen);
+};
+
     return (
         <>
+            <Sidebar isOpen={isOpen} toggle={toggle} />
+            <Navbar toggle={toggle} />
             <ScrollToTop />
-            <LogIn />
+            <Contact />
+            <Footer />
         </>
     )
 }
 
-export default LoginPage;
+export default ContactPage;

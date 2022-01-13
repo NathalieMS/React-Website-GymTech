@@ -32,7 +32,7 @@ const HeroSection = () => {
                     Connecting your body with technology and science for results in record time
                 </HeroP>
                 <HeroBtnWrapper>
-                    <Button to='/contact' onMouseEnter={onHover} onMouseLeave={onHover}
+                    <Button to='./contact' onMouseEnter={onHover} onMouseLeave={onHover}
                         primary='true'
                         dark='true'
                         // se continuar como contato pode apagar o que está embaixo
