@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import {Link} from 'react-router-dom'
 
 export const Container = styled.div`
 min-height: 792px;
@@ -127,6 +128,20 @@ cursor: pointer;
 margin-bottom: 10px;
 margin-top: 20px;
 `
+
+export const LinkEdit = styled(Link)`
+text-decoration: none;
+background: #FF7900;
+padding: 32px 0;
+width: 300px; 
+border: none;
+border-radius: 4px;
+color: #fff;
+font-size: 1.5rem;
+cursor: pointer;
+margin-bottom: 10px;
+margin-top: 20px;`
+
 export const FormEditInput = styled.div`  
     display:flex;
     width: 100%;

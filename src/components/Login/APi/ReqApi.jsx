@@ -1,5 +1,6 @@
 import React, { useState} from 'react'
 import Axios from 'axios'
+import {Link} from 'react-router-dom'
 import {
   Container,
   FormWrap,
@@ -211,10 +212,7 @@ return (
 
 
 }
- 
-
-      
-     
+      <Link to='/post'><FormButtonSearch>Register</FormButtonSearch></Link>
       </FormContent>
   </FormWrap>
   </Container>
