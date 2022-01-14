@@ -131,15 +131,3 @@ export const FormEditInput = styled.div`
     display:flex;
     width: 100%;
 ` 
-export const FormRegister = styled.button`
-background: #FF7900;
-padding: 32px 0;
-width: 300px; 
-border: none;
-border-radius: 4px;
-color: #fff;
-font-size: 1.5rem;
-cursor: pointer;
-margin-bottom: 10px;
-margin-top: 20px; 
-`
