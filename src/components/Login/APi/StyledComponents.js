@@ -131,6 +131,7 @@ margin-top: 20px;
 
 export const LinkEdit = styled(Link)`
 text-decoration: none;
+text-align:center;
 background: #FF7900;
 padding: 32px 0;
 width: 300px; 

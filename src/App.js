@@ -5,8 +5,8 @@ import Home from './components/pages';
 import LoginPage from './components/pages/login';
 import ContactPage from './components/pages/contact';
 import PageNotFoundPage from './components/pages/pagenotfound';
-import ReqApi from './components/Login/APi/ReqApi';
-import PostApi from './components/Login/APi/PostApi';
+import ReqApi from './components/LogIn/APi/ReqApi';
+import PostApi from './components/LogIn/APi/PostApi';
 
 function App() {
   return (
