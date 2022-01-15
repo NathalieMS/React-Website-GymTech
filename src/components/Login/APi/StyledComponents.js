@@ -140,7 +140,9 @@ color: #fff;
 font-size: 1.5rem;
 cursor: pointer;
 margin-bottom: 10px;
-margin-top: 20px;`
+margin-top: 20px;
+text-align:center
+`
 
 export const FormEditInput = styled.div`  
     display:flex;
