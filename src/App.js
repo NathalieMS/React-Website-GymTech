@@ -21,7 +21,6 @@ function App() {
           <Route path= '/post'  element={<PostApi />}/>
         </Routes>
     </Router>
-
   );
 }
 
