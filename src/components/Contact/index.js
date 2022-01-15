@@ -13,7 +13,6 @@ import {
 import {
     Container,
     ContactWrap,
-    Icon,
     ContactContainer,
     ContactCard,
     ContactPhoto,
