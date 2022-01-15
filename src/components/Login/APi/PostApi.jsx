@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
 import {
   Container,
   FormWrap,
@@ -8,10 +7,9 @@ import {
   Form,
   FormInput,
   FormLabel,
-  FormButtonSearch
+  FormButtonSearch,
+  LinkEdit
 } from './StyledComponents'
-
-
 
 
 function PostApi() {
@@ -23,8 +21,10 @@ function PostApi() {
     estado: '',
     telefone: '',
     email: '',
-    plano: '',
+    plano: ''
   });
+
+
 
   const Alunos = (e) => {
     e.preventDefault()
@@ -35,7 +35,11 @@ function PostApi() {
     }).then(x => x.json()).then(res => console.log(res))
   }
 
+
+
   const handleChange = ({ target: { value, name } }) => {
+
+    // const handleOnChange = event => {
     setData({
       ...data, [name]: value,
     });
@@ -64,17 +68,16 @@ function PostApi() {
           <FormInput type='email' onChange={handleChange} name='email' />
           <FormLabel>Membership</FormLabel>
           <FormInput type='text' onChange={handleChange} name='plano' />
-
-          <Link to="/register">
-            <FormButtonSearch>Save</FormButtonSearch>
-          </Link>
-
+          <FormButtonSearch>Save</FormButtonSearch>
         </Form>
-
+        <LinkEdit to='/register' > List all members </LinkEdit>
       </FormContent>
-
+     
     </FormWrap>
+         
   </Container>);
 }
+
+
 
 export default PostApi;
