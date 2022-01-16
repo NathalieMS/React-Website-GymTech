@@ -71,6 +71,6 @@ Inserir no terminal o comando "npm start".
 ## Responsáveis pelo projeto:
 
 - [Larissa Silva](https://github.com/LariCostaSilva)
-- [Murilo Mininel](https://github.com/MuriloMininel) 
+- [Murilo Rodrigues](https://github.com/muridev017) 
 - [Nathalie Moreira](https://github.com/NathalieMS)
 - [Yasmin Reis](https://github.com/yasminreisk)
