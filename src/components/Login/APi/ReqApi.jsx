@@ -14,8 +14,8 @@ import {
   EditButton,
   FormButtonSearch
 } from './StyledComponents'
-import { Loading } from './Loading';
-
+// import { Loading } from './Loading';
+import { Loading } from './Loading'
 import { BsPencilSquare } from "react-icons/bs";
  
 // import './Api.scss'
@@ -221,3 +221,4 @@ return (
     }
  
 export default ReqApi;
+/* att */
