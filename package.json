@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "node": "^17.3.0",
     "axios": "^0.24.0",
     "install": "^0.13.0",
+    "node": "^17.3.0",
     "npm": "^8.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
@@ -41,5 +41,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "mini-css-extract-plugin": "2.4.5"
   }
 }
