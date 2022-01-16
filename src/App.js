@@ -6,7 +6,7 @@ import LoginPage from './components/pages/login';
 import ContactPage from './components/pages/contact';
 import PageNotFoundPage from './components/pages/pagenotfound';
 import ReqApi from './components/Login/API/ReqApi';
-import PostApi from './components/Login/API/PostApi';
+import PostApi from './components/Login/API/PostApi'
 
 function App() {
   return (
